@@ -1,0 +1,19 @@
+
+/* Zen Kaku Gothic Newフォントで代用 */
+/* #000000　黒文字 */
+/* #ffffff　白文字、白背景 */
+/* #e42e1e　赤文字、赤背景 */
+/* #007dd8　青文字、青背景 */
+
+@import url('reset.css');
+
+@import url('header.css');
+
+/* セクション2: ナビゲーション */
+@import url('nav.css');
+
+/* セクション3: メインコンテンツ */
+@import url('main.css');
+
+/* セクション4: フッター */
+@import url('footer.css');
