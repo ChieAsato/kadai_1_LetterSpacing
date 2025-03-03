@@ -37,6 +37,5 @@ select {
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   max-width: 1920px;
-  margin: 0 auto 0 auto;
-  height: 8000px;
+  margin: 0 auto;
 }

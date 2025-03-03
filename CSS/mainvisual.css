@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+#main-visual {
+  position: relative;
+}
+
+.main-visual-bg {
+  height: 1000px;
+  background-image: url("../images/main/img_mainvisual.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.main-visual-batch {
+  position: absolute;
+  top: -80px;
+  left: 36px;
+}
