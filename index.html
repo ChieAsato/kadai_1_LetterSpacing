@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="CSS/contents.css">
   <link rel="stylesheet" href="CSS/profile.css">
   <link rel="stylesheet" href="CSS/book-cover.css">
+  <link rel="stylesheet" href="CSS/footer.css">
   <!-- FontAwesomeのCDNリンク -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
@@ -61,7 +62,8 @@
     <article>
       <section id="main-visual">
         <div class="main-visual-bg"></div>
-        <img class="main-visual-batch" src="images/main/mainvisual_batch.png" alt="バッチ">
+        <img class="main-visual-batch" src="images/main/main.svg" alt="バッチ">
+        <img class="main-visual-text" src="images/main_txt.svg" alt="テキスト">
       </section>
 
       <section id="concept">
@@ -85,7 +87,10 @@
       </section>
       <section id="product">
         <div class="product-flex">
-          <img class="product-pageimg" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス">
+          <div class="product-img-parent">
+            <img class="product-pageimg" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス">
+            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+          </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第一部</span>
             <span class="product-section-title">基本を学ぶ</span>
@@ -96,7 +101,10 @@
           </div>
         </div>
         <div class="product-flex">
-          <img class="product-pageimg" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな">
+          <div class="product-img-parent">
+            <img class="product-pageimg" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな">
+            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+          </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第二部</span>
             <span class="product-section-title">知識を深める</span>
@@ -106,7 +114,10 @@
           </div>
         </div>
         <div class="product-flex">
-          <img class="product-pageimg" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ">
+          <div class="product-img-parent">
+            <img class="product-pageimg" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ">
+            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+          </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第三部</span>
             <span class="product-section-title">実感する</span>
@@ -266,7 +277,8 @@
           <tr>
             <th>今市達也<br><span>(いまいち・たつや)</span></th>
             <td>グラフィックデザイナー/タイプデザイナー
-              東京造形大学造形学部デザイン学科グラフィックデザイン専攻領域卒業。新卒で株式会社DONGURIに入社。タイポグラフィを軸としたCIやグラフィックデザインを制作。2020年にフォント開発事業『katakata』を開始。ブランディングに向けたフォント開発を行う。主な受賞歴:日本タイポグラフィ年鑑入選など。<br>Twitter:<span class="profile-fontred">
+              東京造形大学造形学部デザイン学科グラフィックデザイン専攻領域卒業。新卒で株式会社DONGURIに入社。タイポグラフィを軸としたCIやグラフィックデザインを制作。2020年にフォント開発事業『katakata』を開始。ブランディングに向けたフォント開発を行う。主な受賞歴:日本タイポグラフィ年鑑入選など。<br>Twitter:<span
+                class="profile-fontred">
                 @ima_collection</span></td>
           </tr>
           <tr>
@@ -294,12 +306,30 @@
             <button class="book-cover-button"><a class="book-cover-link" href="#">BNNオンラインストアで購入</a></button>
           </div>
         </div>
-
       </section>
-
-
     </article>
   </main>
+  <footer id="footer">
+    <div class="footer-flex">
+      <div>
+        <img src="images/img_BMGlogo_black.png" alt="BNNロゴ">
+        <p>© 2021 Tatsuya Imaichi</p>
+      </div>
+      <div class="header-sns">
+        <p class="header-p">SNSでシェアする</p>
+        <ul>
+          <li class="header-sns-item"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="header-sns-item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="header-sns-item"><a href=""><i class="fa-brands fa-line"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <p>お問い合わせはこちら</p>
+        <a href="http://www.bnn.co.jp/contact-book/">http://www.bnn.co.jp/contact-book/</a>
+      </div>
+    </div>
+    <img src="images/img_footer.png" alt="pcの前で楽しそうにしている人">
+  </footer>
 </body>
 
 </html>

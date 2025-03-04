@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#footer {
+  height: 250px;
+  position: relative;
+}
+
+.footer-flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 255px;
+  align-items: center;
+}
+
+#footer > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+

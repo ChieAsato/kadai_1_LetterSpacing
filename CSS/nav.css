@@ -14,11 +14,17 @@
 }
 
 .nav-btn {
+  display: block;
   width: 120px;
   background-color: #E4211E;
   padding: 10px;
   border-radius: 4px;
   text-align: left;
+  margin-bottom: 10px;
+}
+
+.nav-btn:hover {
+  background-color: #000000;
 }
 
 .nav-btnlink {

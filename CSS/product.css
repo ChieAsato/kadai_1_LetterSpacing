@@ -9,9 +9,21 @@
   margin-bottom: 180px;
 }
 
+.product-img-parent {
+  position: relative;
+}
+
 .product-pageimg {
   width: 700px;
   height: 500px;
+}
+
+.product-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
 }
 
 .product-flexitem-right {

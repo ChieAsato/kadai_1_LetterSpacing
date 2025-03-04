@@ -9,11 +9,33 @@
   background-image: url("../images/main/img_mainvisual.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  filter: blur(5px);
+  transition: filter 3s ease;
   z-index: 10;
+}
+
+.main-visual-bg:hover {
+  filter: blur(0);
 }
 
 .main-visual-batch {
   position: absolute;
   top: -80px;
   left: 36px;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-visual-text {
+  position: absolute;
+  top: -30px;
+  left: 65px;
 }
