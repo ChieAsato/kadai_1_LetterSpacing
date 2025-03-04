@@ -52,7 +52,7 @@
   right: 0;
 }
 
-.product-detail {
+#product-detail {
   text-align: center;
 }
 
@@ -81,4 +81,23 @@
 
 .product-detail-pageimg {
   width: 33.3%;
+}
+
+.product-purchase {
+  height: 280px;
+  background-color: #E42E1E;
+  text-align: center;
+  padding-top: 62px;
+  margin-top: 160px;
+}
+
+.product-purchase-button {
+  width: 528px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: #000000;
+}
+
+.product-purchase-link {
+  color: #ffffff;
 }

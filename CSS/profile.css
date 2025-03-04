@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#profile {
+  padding: 160px 0 0 180px;
+}
+
+.profile-table{
+  width: 1100px;
+  height: 356px;
+  border: 1px solid #DDD;
+  padding: 71px 63px 27px 55px;
+}
+
+th {
+  width: 290px;
+  text-align: left;
+}
+
+td {
+  width: 700px;
+}
+
+.profile-fontred {
+  color: #e42e1e;
+}

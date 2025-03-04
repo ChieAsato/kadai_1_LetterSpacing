@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#contents {
+  margin: 160px 180px 0 180px;
+}
+
+.contents-h2 {
+  font-size: 24px;
+  margin-bottom: 90px;
+}
+
+.contents-h2-sub {
+  color: #e42e1e;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.contents-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents-flexitem {
+  width: 360px;
+  height: 333px;
+}
+
+.contents-h3 {
+  color: #e42e1e;
+  margin-bottom: 18px;
+}
+
+.contents-listitem {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.contents-listitem > span {
+  color: #e42e1e;
+  margin-right: 10px;
+}
