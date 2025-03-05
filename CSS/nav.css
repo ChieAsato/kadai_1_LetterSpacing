@@ -16,10 +16,10 @@
 .nav-btn {
   display: block;
   width: 120px;
+  height: 30px;
   background-color: #E4211E;
-  padding: 10px;
   border-radius: 4px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -30,6 +30,15 @@
 .nav-btnlink {
   font-size: 10px;
   color: #ffffff;
+}
+
+.nav-btnlogo {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 10px;
+  object-fit: contain;
+  fill: #000000;
 }
 
 .nav-link {

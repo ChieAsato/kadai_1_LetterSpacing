@@ -18,12 +18,72 @@
   height: 500px;
 }
 
-.product-icon {
+.fullscreenImage {
+  position: fixed;
+  /* 固定位置に配置 */
+  top: 0;
+  /* 上部に配置 */
+  left: 0;
+  /* 左側に配置 */
+  width: 100%;
+  /* 幅を画面いっぱいに */
+  height: 100%;
+  /* 高さを画面いっぱいに */
+  object-fit: contain;
+  /* 画像が縦横比を維持しつつ全体を収める */
+  display: none;
+  /* 最初は非表示 */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* 背景を暗くして画像を際立たせる */
+  z-index: 9999;
+  /* 最前面に表示 */
+  cursor: pointer;
+  /* クリック可能なカーソルに */
+  transition: opacity 0.3s ease-in-out;
+  /* フェードイン・フェードアウトの効果 */
+}
+
+.fullscreenImage.show {
+  display: block;
+  /* クラスが「show」の場合、表示 */
+  opacity: 1;
+  /* 完全に表示 */
+}
+
+.fullscreenImage.hide {
+  opacity: 0;
+  /* 画像を非表示 */
+  pointer-events: none;
+  /* 非表示の際にクリックを無効化 */
+}
+
+#fullscreenImage:active {
+  cursor: pointer;
+}
+
+.product-frame-icon {
   width: 50px;
   height: 50px;
   position: absolute;
   bottom: 5px;
   right: 0;
+}
+
+.red {
+  background: #e42e1e;
+}
+
+.green {
+  background: #00ab3a;
+}
+
+.blue {
+  background: #007dd8;
+}
+
+.product-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .product-flexitem-right {
@@ -87,12 +147,33 @@
 }
 
 .product-detail-row {
+  width: 100%;
+  position: relative;
+}
+
+.product-detail-illust {
+  position: absolute;
+  top: 300px;
+  left: 120px;
+}
+
+.scroll-wrapper {
   display: flex;
-  justify-content: center;
+  animation: scrollImages 15s linear infinite;
 }
 
 .product-detail-pageimg {
   width: 33.3%;
+  margin-right: 10px;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0); /* 最初の位置 */
+  }
+  100% {
+    transform: translateX(-100%); /* 画像をすべてスクロール */
+  }
 }
 
 .product-purchase {

@@ -28,7 +28,7 @@
   <header id="header">
     <div>
       <div class="header-bnn">
-        <img class="header-bnn-img" src="images/img_BMGlogo_black.png" alt="BNNロゴ">
+        <img class="header-bnn-img" src="images/BNN_logo.svg" alt="BNNロゴ">
         <p class="header-p">ISBN:978-4-8025-1209-1</p>
         <p class="header-p">¥2,200+tax</p>
       </div>
@@ -47,8 +47,10 @@
     </div>
     <nav id="nav">
       <div>
-        <button class="nav-btn"><a class="nav-btnlink" href="">Amazonで購入</a></button>
-        <button class="nav-btn"><a class="nav-btnlink" href="">BNNで購入</a></button>
+        <button class="nav-btn"><a class="nav-btnlink" href="">Amazonで購入<img class="nav-btnlogo" src="images/img_amazon_logo.png" alt="アマゾンリンク"></a>
+        </button>
+        <button class="nav-btn"><a class="nav-btnlink" href="">BNNで購入<img class="nav-btnlogo" src="images/BNN_logo.svg" alt="BNNリンク"></a>
+        </button>
       </div>
       <ul>
         <li><a class="nav-link" href="">コンセプト</a></li>
@@ -88,8 +90,9 @@
       <section id="product">
         <div class="product-flex">
           <div class="product-img-parent">
-            <img class="product-pageimg" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス">
-            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+            <img id="imageToShow1" class="product-pageimg" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス">
+            <button id="openButton1" class="product-frame-icon red"><img class="product-icon" src="images/icn_zoom_white.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage1" class="fullscreenImage" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第一部</span>
@@ -102,8 +105,9 @@
         </div>
         <div class="product-flex">
           <div class="product-img-parent">
-            <img class="product-pageimg" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな">
-            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+            <img id="imageToShow2" class="product-pageimg" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな">
+            <button id="openButton2" class="product-frame-icon green"><img class="product-icon" src="images/icn_zoom_white.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage2" class="fullscreenImage" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第二部</span>
@@ -115,8 +119,9 @@
         </div>
         <div class="product-flex">
           <div class="product-img-parent">
-            <img class="product-pageimg" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ">
-            <img class="product-icon" src="images/icn_zoom.svg" alt="全画面表示アイコン">
+            <img id="imageToShow3" class="product-pageimg" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ">
+            <button id="openButton3" class="product-frame-icon blue"><img class="product-icon" src="images/icn_zoom_white.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage3" class="fullscreenImage" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第三部</span>
@@ -130,9 +135,30 @@
       <section id="product-detail">
         <h3 class="product-detail-title">知りたいところだけサクッと読める見開き完結</h3>
         <div class="product-detail-row">
-          <img class="product-detail-pageimg" src="images/product/img_feature_page_01.png" alt="">
-          <img class="product-detail-pageimg" src="images/product/img_feature_page_02.png" alt="">
-          <img class="product-detail-pageimg" src="images/product/img_feature_page_03.png" alt="">
+          <div class="scroll-wrapper">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_01.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_02.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_03.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_04.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_05.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_06.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_07.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_08.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_09.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_10.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_11.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_12.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_13.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_14.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_15.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_16.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_17.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_18.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_19.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_20.png" alt="">
+            <img class="product-detail-pageimg" src="images/product/img_feature_page_21.png" alt="">
+          </div>
+          <img class="product-detail-illust" src="images/product/img_feature_page_illust.png" alt="虫眼鏡を持っている人">
         </div>
         <div class="product-purchase">
           <button class="product-purchase-button"><a class="product-purchase-link" href="#">Amazonで購入</a></button>
@@ -302,8 +328,12 @@
             </div>
           </div>
           <div>
-            <button class="book-cover-button"><a class="book-cover-link" href="#">Amazonで購入</a></button>
-            <button class="book-cover-button"><a class="book-cover-link" href="#">BNNオンラインストアで購入</a></button>
+            <button class="book-cover-button">
+              <a class="book-cover-link" href="#">Amazonで購入</a>
+            </button>
+            <button class="book-cover-button">
+              <a class="book-cover-link" href="#">BNNオンラインストアで購入
+            </button>
           </div>
         </div>
       </section>
@@ -312,8 +342,8 @@
   <footer id="footer">
     <div class="footer-flex">
       <div>
-        <img src="images/img_BMGlogo_black.png" alt="BNNロゴ">
-        <p>© 2021 Tatsuya Imaichi</p>
+        <img src="images/BNN_logo.svg" alt="BNNロゴ">
+        <p>&copy; 2021 Tatsuya Imaichi</p>
       </div>
       <div class="header-sns">
         <p class="header-p">SNSでシェアする</p>
@@ -330,6 +360,20 @@
     </div>
     <img src="images/img_footer.png" alt="pcの前で楽しそうにしている人">
   </footer>
+  <script src="JavaScript/index.js"></script>
 </body>
 
 </html>
+
+
+
+<svg width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="39" height="21" fill="url(#pattern0_26_18)"/>
+  <defs>
+  <pattern id="pattern0_26_18" patternContentUnits="objectBoundingBox" width="1" height="1">
+  <use xlink:href="#image0_26_18" transform="scale(0.025641 0.047619)"/>
+  </pattern>
+  <image id="image0_26_18" width="39" height="21" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAVCAYAAADFEfeTAAAABmJLR0QA/wD/AP+gvaeTAAAC2UlEQVRIiZ3WXYhVVRQH8N+MIyLpTJYfqeiDilChDwopCkaQOVKICEJvPYZU9GWgiaUQJApCEGjSQwr6kKA40ENQBI364hgGpYmM0oOZiubXGPl1e1j76rlnzrn3XP+w4LD+e+2z9lprr7VhEAMlchRfYZ5G9CW7uryV4T7A1YxcyXA/5bgNGW49ajkZpiiSO3g9s9HxHH8ZYxO3Icc9yNgN5LhreKrMuU7VMBK7MKGEH68xelXRg/fLyE78WKA/gb9yurFY2eRHa9EtotEO3hWH+1tKZRYvG57GHoxAf06/Ndnk01qXjYk/oVpa67KliO/E/ZIT3cf5nG6o7PgJH2Ic/mmxLo+3MQk3ssquksXvifpaldP3t/hJj0hTu3gCHxURL6l2Y4+jI9mUpbWG6/hVe2mt4TZOyqW1KqbjmRIuW8jdmFtxz3uZ79F4Nku249x4rCvh9rexTxbfNCOLnPsXM/E8tue4fA3W8YVoBe1il5gwlZ2r4azI/84cNxWjCmyG8NljOHcXm9pxrkO0gyl4p2CzOyV7NY1CE+wTF6iSc6PFUD5f4NwxBV084S42P4ZzD/BJVeeaYVsLfq+SKLRAn3gBNaCqc/+JxnyoxbrSKFTAsE7QhdN4s4nRFRzGxYzuB431lR32ffhSjCMay+CgaODZvevox6fi0j3ENHyL3XiuxMFevIE1mFF+jod4BYvEzOzO6JdUsJ1RX9cl5uECMax7xYyrpZOsEFE5LV4cgx4V/i/iRk9M30NYLBryq8n2Nm4l/Xf4HB+LF89UMVNPYTl2pABcwAuYOSJtvkIU8pOYL0bVJUxOzv+JP/AazokxcwMLMRur8bV4791M0TqHpSkaY0QKp+BAkjl4WjzZvk+Rnizel2vxc0cyXCj610BaNEo8vdfhd3ELhzBLNOe5+C2d/npy8HCK2BFRKmewTNzCF5MDS9K61aItSf/txR4xmQbTf6b9D56K8NzfYLEAAAAAAElFTkSuQmCC"/>
+  </defs>
+  </svg>
+  

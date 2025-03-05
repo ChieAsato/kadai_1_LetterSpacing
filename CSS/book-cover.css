@@ -17,7 +17,7 @@
   color: #ffffff;
 }
 
-.book-cover-flex > img {
+.book-cover-flex>img {
   width: 320px;
   height: 454px;
 }
@@ -35,7 +35,8 @@
   color: #ffffff;
 }
 
-
-
-
-
+.book-cover-linkicon {
+  width: 50px;
+  height: 10px;
+  color: #ffffff;
+}

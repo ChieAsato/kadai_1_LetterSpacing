@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.footer-flex p {
+  color: black;
+}
+
 #footer > img {
   position: absolute;
   bottom: 0;

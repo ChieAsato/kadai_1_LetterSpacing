@@ -33,6 +33,10 @@ select {
   font-family: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* デフォルトのフォントとサイズをリセット */
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
