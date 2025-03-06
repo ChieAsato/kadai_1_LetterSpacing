@@ -149,11 +149,12 @@
 .product-detail-row {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .product-detail-illust {
   position: absolute;
-  top: 300px;
+  top: 200px;
   left: 120px;
 }
 
