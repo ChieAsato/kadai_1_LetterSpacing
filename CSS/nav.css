@@ -13,7 +13,10 @@
   margin-top: 80px;
 }
 
-.nav-btn {
+
+.nav-btnlink {
+  font-size: 10px;
+  color: #ffffff;
   display: block;
   width: 120px;
   height: 30px;
@@ -21,15 +24,11 @@
   border-radius: 4px;
   text-align: center;
   margin-bottom: 10px;
+  line-height: 30px;
 }
 
-.nav-btn:hover {
+.nav-btnlink:hover {
   background-color: #000000;
-}
-
-.nav-btnlink {
-  font-size: 10px;
-  color: #ffffff;
 }
 
 .nav-btnlogo {

@@ -185,13 +185,12 @@
   margin-top: 160px;
 }
 
-.product-purchase-button {
+.product-purchase-link {
+  display: inline-block;
+  color: #ffffff;
   width: 528px;
   height: 120px;
   border-radius: 8px;
   background-color: #000000;
-}
-
-.product-purchase-link {
-  color: #ffffff;
+  line-height: 120px;
 }
