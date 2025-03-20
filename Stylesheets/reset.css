@@ -2,9 +2,9 @@
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* リストのスタイルをリセット */
@@ -14,12 +14,8 @@ ol, ul {
 
 /* リンクの下線を削除 */
 a {
-  text-decoration: none;
   color: black;
-}
-
-a:hover {
-  text-decoration:underline;
+  text-decoration: none;
 }
 
 /* ボタンやフォーム要素のスタイルをリセット */
@@ -29,8 +25,8 @@ textarea,
 select {
   background: none;
   border: none;
-  outline: none;
   font-family: inherit;
+  outline: none;
 }
 
 button {
@@ -40,6 +36,6 @@ button {
 /* デフォルトのフォントとサイズをリセット */
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
 }

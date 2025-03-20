@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+#product {
+  padding: 50px 264px 50px 216px;
+}
+
+#product-detail {
+  text-align: center;
+}
+
+#fullscreenImage:active {
+  cursor: pointer;
+}
+
+.blue {
+  background: #007dd8;
+}
+
+.green {
+  background: #00ab3a;
+}
+
+.red {
+  background: #e42e1e;
+}
+
+.fullscreenImage {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  left: 0;
+  object-fit: contain;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 9999;
+}
+
+.fullscreenImage.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fullscreenImage.show {
+  display: block;
+}
+
+.product-detail-illust {
+  left: 120px;
+  position: absolute;
+  top: 200px;
+}
+
+.product-detail-pageimg {
+  margin-right: 10px;
+  width: 33.3%;
+}
+
+.product-detail-row {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.product-detail-title {
+  color: #E42E1E;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.product-detail-title::before {
+  color: #E42E1E;
+  content: "・・・・";
+  font-size: 32px;
+  font-weight: 500;
+  left: 45.5%;
+  position: absolute;
+  top: -60%;
+}
+
+.product-explain {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 28px;
+  width: 436px;
+}
+
+.product-flex {
+  display: flex;
+  margin-bottom: 180px;
+}
+
+.product-flexitem-right {
+  padding: 80px 0 0 50px;
+  position: relative;
+}
+
+.product-frame-icon {
+  bottom: 5px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  width: 50px;
+}
+
+.product-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.product-illust {
+  bottom: 0;
+  height: 150px;
+  position: absolute;
+  right: 0;
+  width: 315px;
+}
+
+.product-img-parent {
+  position: relative;
+}
+
+.product-pageimg {
+  height: 500px;
+  width: 700px;
+}
+
+.product-purchase {
+  background-color: #E42E1E;
+  height: 280px;
+  margin-top: 160px;
+  padding-top: 62px;
+  text-align: center;
+}
+
+.product-purchase-link {
+  background-color: #000000;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  height: 120px;
+  line-height: 120px;
+  width: 528px;
+}
+
+.product-section-nb {
+  background-color: #e42e1e;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.product-section-title {
+  color: #e42e1e;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.product-title {
+  font-size: 27px;
+  margin-bottom: 29px;
+}
+
+.scroll-wrapper {
+  animation: scrollImages 15s linear infinite;
+  display: flex;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0); /* 最初の位置 */
+  }
+  100% {
+    transform: translateX(-100%); /* 画像をすべてスクロール */
+  }
+}

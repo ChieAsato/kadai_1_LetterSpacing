@@ -4,6 +4,16 @@
   margin: 160px 180px 0 180px;
 }
 
+.contents-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents-flexitem {
+  height: 333px;
+  width: 360px;
+}
+
 .contents-h2 {
   font-size: 24px;
   margin-bottom: 90px;
@@ -13,16 +23,6 @@
   color: #e42e1e;
   font-size: 10px;
   margin-left: 10px;
-}
-
-.contents-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contents-flexitem {
-  width: 360px;
-  height: 333px;
 }
 
 .contents-h3 {

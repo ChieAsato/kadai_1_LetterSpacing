@@ -6,29 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>レタースペーシング</title>
   <meta name="description" content="タイポグラフィにおける文字間調整の考え方">
-  <link rel="stylesheet" href="CSS/reset.css">
-  <link rel="stylesheet" href="CSS/header.css">
-  <link rel="stylesheet" href="CSS/nav.css">
-  <link rel="stylesheet" href="CSS/mainvisual.css">
-  <link rel="stylesheet" href="CSS/concept.css">
-  <link rel="stylesheet" href="CSS/product.css">
-  <link rel="stylesheet" href="CSS/contents.css">
-  <link rel="stylesheet" href="CSS/profile.css">
-  <link rel="stylesheet" href="CSS/book-cover.css">
-  <link rel="stylesheet" href="CSS/footer.css">
-  <!-- FontAwesomeのCDNリンク -->
+  <link rel="stylesheet" href="Stylesheets/reset.css">
+  <link rel="stylesheet" href="Stylesheets/header.css">
+  <link rel="stylesheet" href="Stylesheets/nav.css">
+  <link rel="stylesheet" href="Stylesheets/mainvisual.css">
+  <link rel="stylesheet" href="Stylesheets/concept.css">
+  <link rel="stylesheet" href="Stylesheets/product.css">
+  <link rel="stylesheet" href="Stylesheets/contents.css">
+  <link rel="stylesheet" href="Stylesheets/profile.css">
+  <link rel="stylesheet" href="Stylesheets/book-cover.css">
+  <link rel="stylesheet" href="Stylesheets/footer.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
-
-
-
 </head>
 
 <body>
+  <svg style="display: none;">
+    <symbol id="amazon" viewBox="0 0 10 11">
+      <path
+        d="M5.7651 3.20915C4.64283 3.25335 1.85904 3.58973 1.85904 6.0942C1.85904 8.78281 5.04611 8.8933 6.08773 7.15491C6.23752 7.40536 6.90351 8.07567 7.13165 8.30402L8.44058 6.92902C8.44058 6.92902 7.69624 6.30781 7.69624 5.63259V2.02076C7.69624 1.39955 7.13165 0 5.10833 0C3.0804 0 2.00422 1.35045 2.00422 2.56094L3.698 2.7279C4.07363 1.5125 4.94702 1.5125 4.94702 1.5125C5.88493 1.51004 5.7651 2.2442 5.7651 3.20915ZM5.7651 5.3404C5.7651 7.30469 3.82474 7.01004 3.82474 5.76272C3.82474 4.60379 4.9885 4.37054 5.7651 4.34353V5.3404ZM8.89917 9.35491C8.72173 9.60045 7.28605 11 4.87788 11C2.46972 11 0.626148 9.24442 0.0615541 8.52009C-0.0951495 8.33103 0.0845987 8.24263 0.1883 8.31629C1.87747 9.40893 4.51608 11.2087 8.77243 9.06027C8.94526 8.96942 9.07892 9.10938 8.89917 9.35491ZM9.81635 9.40893C9.66656 9.79688 9.44763 10.067 9.3278 10.1701C9.20106 10.2806 9.10888 10.2364 9.17801 10.0768C9.24715 9.91719 9.62277 8.93504 9.47068 8.72634C9.32089 8.52254 8.61803 8.62076 8.36454 8.64777C8.11565 8.67232 8.06496 8.69687 8.04191 8.6404C7.98891 8.50045 8.54198 8.25982 8.90609 8.21071C9.26789 8.16652 9.85092 8.19107 9.96614 8.35067C10.0514 8.47589 9.96614 9.01607 9.81635 9.40893Z"
+        fill="currentColor"></path>
+    </symbol>
+  </svg>
+  <svg style="display: none;">
+    <symbol id="bnn" viewBox="0 0 39 21">
+      <g clip-path="url(#clip0)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M21.2506 7.96215V4.59486C21.2506 4.06405 20.9264 3.88159 20.5212 3.74888V0.0830078H24.995V16.6541H21.2993L17.1821 8.85789V16.6707H13.1945V0.165946H17.2793L21.2506 7.96215Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M35.2556 7.87915V4.52844C35.2556 3.99763 34.9314 3.81517 34.5262 3.68246V0H39V16.5711H35.3204L31.187 8.75829V16.5711H27.1995V0.0829384H31.2843L35.2556 7.87915Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.82544 18.1636H4.71696C4.71696 18.1636 4.71696 19.192 4.71696 19.5072C4.71696 19.6565 4.86285 19.7228 4.9601 19.7228C5.1222 19.7228 5.28429 19.6067 5.28429 19.4906C5.28429 19.2252 5.28429 18.1636 5.28429 18.1636H6.09477V20.3366H5.28429V20.1209C5.07357 20.2702 4.9601 20.3366 4.47382 20.3366C4.11721 20.3366 3.82544 19.9385 3.82544 19.756C3.82544 19.192 3.82544 18.1636 3.82544 18.1636Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.53116 17.4009H10.4389L11.3142 18.8108V17.4009H12.2219L12.2057 20.3203H11.3304L10.3416 18.8274V20.3203H9.53116V17.4009Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M14.8965 18.2466H15.6422L15.9663 19.2584L16.2743 18.23L17.0037 18.2466L17.3441 19.2418L17.6683 18.2466H18.495L17.8304 20.32H16.9551L16.6633 19.3414L16.2905 20.32H15.4314L14.8965 18.2466Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M20.0349 18.91C20.0349 18.7275 19.7755 18.6611 19.6297 18.6611C19.5324 18.6611 19.4514 18.7109 19.4514 18.827C19.4514 19.0758 19.9538 19.0924 20.1159 19.109C20.2618 19.1422 20.6833 19.3578 20.6833 19.6896C20.6833 20.1872 20.0835 20.4194 19.6459 20.4194C19.0623 20.4194 18.576 20.2204 18.576 19.673H19.2244C19.2244 19.7891 19.3865 19.9218 19.5162 19.9218C19.6783 19.9218 19.808 19.8886 19.808 19.7559C19.7918 19.4242 18.9489 19.6398 18.7057 19.1422C18.5761 18.8602 18.6733 18.4953 18.9164 18.3792C19.6783 17.9479 20.6184 18.2962 20.6184 18.9266L20.0349 18.91Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M21.4127 17.5H22.3204L23.1958 18.8934L23.212 17.4834H24.1035V20.4028H23.212L22.2232 18.9099V20.4028H21.4127V17.5Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M28.5125 18.396H29.2419L29.5823 19.4078L29.8903 18.3794L30.6197 18.396L30.9601 19.3912L31.2843 18.396H32.111L31.4464 20.4694H30.5711L30.2631 19.4742L29.9065 20.4694H29.0474L28.5125 18.396Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M27.1022 18.4125V17.666H27.8317V18.4125H28.2369V18.8272H27.8317C27.8317 18.8272 27.8317 19.5902 27.8317 19.7892C27.8317 20.0546 28.01 20.1044 28.2369 20.0049V20.4196C28.091 20.4859 27.8803 20.5025 27.7344 20.5025C27.2319 20.5025 27.1022 20.2869 27.1022 19.839C27.1022 19.4243 27.1022 18.8437 27.1022 18.8437H26.7781V18.429H27.1022V18.4125Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M36.3903 18.3296V18.9931C35.8554 18.9931 35.5798 19.1756 35.5798 19.3912C35.5798 19.8391 35.5798 20.486 35.5798 20.486H34.8504V18.4125H35.5798V18.6613C35.6446 18.4789 35.8878 18.3296 36.3903 18.3296Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M36.7145 17.5H37.5249V18.91L38.1085 18.3294H38.8379L38.1895 19.1588L39 20.4858H38.1085L37.5249 19.5735V20.4858H36.7145V17.5Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5848 7.92856C11.0062 7.31482 11.5736 6.15368 11.5736 4.82667C11.5736 1.57548 9.19077 0.182115 7.39152 0.182115C7.05112 0.165527 0 0.165527 0 0.165527V3.40012C0.405237 3.53283 0.745636 3.71529 0.745636 4.2461V16.3883C0.745636 16.3883 7.8616 16.4049 8.07232 16.4049C9.53117 16.4049 12.0599 15.2603 12.0599 11.7271C12.0599 10.1015 11.2818 8.60866 10.5848 7.92856ZM5.05736 3.8314C5.05736 3.8314 6.09476 3.8314 6.19202 3.8314C6.8404 3.8314 7.42394 4.29586 7.42394 5.09207C7.42394 5.9878 6.93766 6.50202 6.19202 6.50202C5.99751 6.50202 5.05736 6.50202 5.05736 6.50202V3.8314ZM6.51621 12.9049C6.30549 12.9049 4.9601 12.9049 4.9601 12.9049V10.1513C4.9601 10.1513 6.30549 10.1513 6.41895 10.1513C7.45636 10.1513 7.89401 10.6158 7.89401 11.412C7.89401 12.3077 7.40773 12.9049 6.51621 12.9049Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.17706 18.661C3.37157 18.5283 3.4202 18.3458 3.4202 18.1136C3.4202 17.5662 3.11222 17.3174 2.399 17.3174C2.35037 17.3174 0.826683 17.3174 0.826683 17.3174V20.2368C0.826683 20.2368 2.65835 20.2368 2.70698 20.2368C3.2581 20.2368 3.5985 20.0046 3.5985 19.3908C3.5985 19.1254 3.4202 18.8103 3.17706 18.661ZM1.70199 17.9975C1.70199 17.9975 2.30175 17.9975 2.31796 17.9975C2.41521 17.9975 2.52868 18.0804 2.52868 18.2131C2.52868 18.3624 2.44763 18.4288 2.31796 18.4288C2.28554 18.4288 1.70199 18.4288 1.70199 18.4288V17.9975ZM2.31796 19.5733C2.28554 19.5733 1.7182 19.5733 1.7182 19.5733V18.9927C1.7182 18.9927 2.26933 18.9927 2.30175 18.9927C2.65835 18.9927 2.70698 19.1586 2.70698 19.2913C2.69077 19.4406 2.65835 19.5733 2.31796 19.5733Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.7207 18.1635H7.91023V18.2796C7.79676 18.1469 7.55362 18.0806 7.24564 18.0806C6.8404 18.0806 6.45137 18.3626 6.43517 19.2085C6.43517 19.9716 7.05113 20.1706 7.3429 20.1706C7.53741 20.1706 7.79676 20.1043 7.91023 20.0047C7.91023 20.0047 7.89402 20.1706 7.89402 20.3531C7.89402 20.436 7.74813 20.519 7.58604 20.519C7.48878 20.519 7.40773 20.4692 7.40773 20.3531H6.51621C6.51621 20.718 7.0025 21 7.61846 21.0166C8.15337 21.0332 8.7207 20.6682 8.7207 20.3531C8.7207 19.9716 8.7207 18.1635 8.7207 18.1635ZM7.56983 19.59C7.37531 19.59 7.22943 19.391 7.22943 19.1256C7.22943 18.8602 7.37531 18.6611 7.56983 18.6611C7.76434 18.6611 7.91023 18.8602 7.91023 19.1256C7.91023 19.3744 7.76434 19.59 7.56983 19.59Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M13.6646 19.8223C13.4214 19.8223 13.2756 19.7394 13.2756 19.4076H14.8155C14.8155 18.8271 14.6534 18.1636 13.6484 18.1636C12.5786 18.1636 12.4651 18.8603 12.4651 19.2418C12.4651 19.9219 12.9676 20.3366 13.6484 20.32C14.086 20.32 14.7506 20.1707 14.7506 19.6565H14.0212C14.005 19.7228 13.8915 19.8223 13.6646 19.8223ZM13.6484 18.6612C13.8591 18.6612 13.9239 18.8105 13.9239 18.993H13.3566C13.3566 18.8105 13.4214 18.6612 13.6484 18.6612Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M25.4813 19.9215C25.2382 19.9215 25.0923 19.8219 25.0923 19.5068H26.6322C26.6322 18.9262 26.4701 18.2627 25.4651 18.2627C24.3953 18.2627 24.2818 18.9428 24.2818 19.3409C24.2818 20.0376 24.7843 20.4357 25.4651 20.4357C25.9027 20.4357 26.5673 20.2864 26.5673 19.7722H25.8379C25.8379 19.8219 25.7082 19.9215 25.4813 19.9215ZM25.4651 18.7603C25.6758 18.7603 25.7407 18.9096 25.7407 19.0921H25.1733C25.1733 18.9096 25.2544 18.7603 25.4651 18.7603Z"
+          fill="currentColor"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M33.3267 18.313C32.6783 18.313 32.1434 18.8272 32.1434 19.4409C32.1434 20.0713 32.6783 20.5689 33.3267 20.5689C33.9751 20.5689 34.51 20.0547 34.51 19.4409C34.51 18.8272 33.9913 18.313 33.3267 18.313ZM33.3267 19.9883C33.0511 19.9883 32.9701 19.7395 32.9701 19.4409C32.9701 19.1424 33.0511 18.8936 33.3591 18.8936C33.6347 18.8936 33.7157 19.1424 33.7157 19.4409C33.6995 19.7395 33.6023 19.9883 33.3267 19.9883Z"
+          fill="currentColor"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0">
+          <rect width="39" height="21" fill="currentColor"></rect>
+        </clipPath>
+      </defs>
+    </symbol>
+  </svg>
   <header id="header">
     <div>
       <div class="header-bnn">
-        <img class="header-bnn-img" src="images/icn_bnn.svg" alt="BNNロゴ">
+        <svg width="30" height="20">
+          <use  href="#bnn" />
+        </svg>
         <p class="header-p">ISBN:978-4-8025-1209-1</p>
         <p class="header-p">¥2,200+tax</p>
       </div>
@@ -47,23 +115,32 @@
     </div>
     <nav id="nav">
       <div>
-        <a class="nav-btnlink" href="">Amazonで購入<img class="nav-btnlogo" src="images/icn_amazon.svg" alt="アマゾンリンク"></a>
-        <a class="nav-btnlink" href="">BNNで購入<img class="nav-btnlogo" src="images/icn_bnn.svg" alt="BNNリンク"></a>
+        <a class="nav-btnlink" href="">Amazonで購入
+          <svg width="20" height="10">
+            <use href="#amazon" />
+          </svg>
+        </a>
+        <a class="nav-btnlink" href="">BNNで購入
+          <svg width="20" height="10">
+            <use href="#bnn" />
+          </svg>
+        </a>
       </div>
       <ul>
-        <li><a class="nav-link" href="">コンセプト</a></li>
-        <li><a class="nav-link" href="">本書の特徴</a></li>
-        <li><a class="nav-link" href="">目次</a></li>
-        <li><a class="nav-link" href="">著者について</a></li>
+        <li><a class="nav-link" href="#concept">コンセプト</a></li>
+        <li><a class="nav-link" href="#product">本書の特徴</a></li>
+        <li><a class="nav-link" href="#contents">目次</a></li>
+        <li><a class="nav-link" href="#profile">著者について</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <article>
+      <h2 class="main-visual-text">WEB<span class="fontsmaller">や</span><br>印刷物<span
+          class="fontsmaller">のための</span><br>デザイン本!</h2>
       <section id="main-visual">
         <div class="main-visual-bg"></div>
-        <img class="main-visual-batch" src="images/main/main.svg" alt="バッチ">
-        <h2><img class="main-visual-text" src="images/txt_batch.svg" alt="テキスト"></h2>
+        <h2><img class="main-visual-batch" src="images/main/main.svg" alt="バッチ"></h2>
       </section>
 
       <section id="concept">
@@ -89,8 +166,10 @@
         <div class="product-flex">
           <div class="product-img-parent">
             <img id="imageToShow1" class="product-pageimg" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス">
-            <button id="openButton1" class="product-frame-icon red"><img class="product-icon" src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
-            <img id="fullscreenImage1" class="fullscreenImage" src="images/product/img_feature_01.png" alt="レタースペーシングのプロセス全画面用">
+            <button id="openButton1" class="product-frame-icon red"><img class="product-icon"
+                src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage1" class="fullscreenImage" src="images/product/img_feature_01.png"
+              alt="レタースペーシングのプロセス全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第一部</span>
@@ -104,8 +183,10 @@
         <div class="product-flex">
           <div class="product-img-parent">
             <img id="imageToShow2" class="product-pageimg" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな">
-            <button id="openButton2" class="product-frame-icon green"><img class="product-icon" src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
-            <img id="fullscreenImage2" class="fullscreenImage" src="images/product/img_feature_02.png" alt="縦組みと横組みのひらがな全画面用">
+            <button id="openButton2" class="product-frame-icon green"><img class="product-icon"
+                src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage2" class="fullscreenImage" src="images/product/img_feature_02.png"
+              alt="縦組みと横組みのひらがな全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第二部</span>
@@ -118,8 +199,10 @@
         <div class="product-flex">
           <div class="product-img-parent">
             <img id="imageToShow3" class="product-pageimg" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ">
-            <button id="openButton3" class="product-frame-icon blue"><img class="product-icon" src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
-            <img id="fullscreenImage3" class="fullscreenImage" src="images/product/img_feature_03.png" alt="明治おいしい牛乳のロゴタイプ全画面用">
+            <button id="openButton3" class="product-frame-icon blue"><img class="product-icon"
+                src="images/icn_musimegane.svg" alt="全画面表示アイコン"></button>
+            <img id="fullscreenImage3" class="fullscreenImage" src="images/product/img_feature_03.png"
+              alt="明治おいしい牛乳のロゴタイプ全画面用">
           </div>
           <div class="product-flexitem-right">
             <span class="product-section-nb">第三部</span>
@@ -159,8 +242,22 @@
           <img class="product-detail-illust" src="images/product/img_feature_page_illust.png" alt="虫眼鏡を持っている人">
         </div>
         <div class="product-purchase">
-          <a class="product-purchase-link" href="#">Amazonで購入</a>
-          <a class="product-purchase-link" href="#">BNNオンラインストアで購入</a>
+          <a class="product-purchase-link" href="#">
+            <svg width="120" height="20" xmlns="http://www.w3.org/2000/svg">
+              <!-- アイコンの挿入 -->
+              <use href="#amazon" width="20" height="10" fill="white" />
+              <!-- テキストの表示 -->
+              <text x="30" y="10" font-size="14" fill="white" alignment-baseline="bottom">Amazonで購入</text>
+            </svg>
+          </a>
+          <a class="product-purchase-link" href="#">
+            <svg width="200" height="20" xmlns="http://www.w3.org/2000/svg">
+              <!-- アイコンの挿入 -->
+              <use href="#bnn" width="25" height="10" />
+              <!-- テキストの表示 -->
+              <text x="35" y="10" font-size="14" fill="white" alignment-baseline="bottom">BNNオンラインストアで購入</text>
+            </svg>
+          </a>
         </div>
       </section>
       <section id="contents">
@@ -294,17 +391,15 @@
         </div>
       </section>
       <section id="profile">
-        <table class="profile-table">
-          <tr>
-            <h2><th>著者について<span class="profile-fontred">About the author</span></th></h2>
-            <td><span></span></td>
-          </tr>
+        <h2 class="profile-title">著者について</h2><span class="profile-fontred">About the author</span>
+        <table>
           <tr>
             <th>今市達也<br><span>(いまいち・たつや)</span></th>
             <td>グラフィックデザイナー/タイプデザイナー
               東京造形大学造形学部デザイン学科グラフィックデザイン専攻領域卒業。新卒で株式会社DONGURIに入社。タイポグラフィを軸としたCIやグラフィックデザインを制作。2020年にフォント開発事業『katakata』を開始。ブランディングに向けたフォント開発を行う。主な受賞歴:日本タイポグラフィ年鑑入選など。<br>Twitter:<span
                 class="profile-fontred">
-                @ima_collection</span></td>
+                @ima_collection</span>
+            </td>
           </tr>
           <tr>
             <th>出版社情報</th>
@@ -327,8 +422,18 @@
             </div>
           </div>
           <div>
-            <a class="book-cover-link" href="#">Amazonで購入</a>
-            <a class="book-cover-link" href="#">BNNオンラインストアで購入</a>
+            <a class="book-cover-link" href="#">
+              <svg width="30" height="20" fill="white">
+                <use href="#amazon" />
+              </svg>
+              Amazonで購入
+            </a>
+            <a class="book-cover-link" href="#">
+              <svg width="20" height="10">
+                <use href="#bnn" />
+              </svg>
+              BNNオンラインストアで購入
+            </a>
           </div>
         </div>
       </section>
@@ -337,7 +442,9 @@
   <footer id="footer">
     <div class="footer-flex">
       <div>
-        <img src="images/icn_bnn.svg" alt="BNNロゴ">
+        <svg width="40" height="40">
+          <use href="#bnn" />
+        </svg>
         <p>&copy; 2021 Tatsuya Imaichi</p>
       </div>
       <div class="header-sns">

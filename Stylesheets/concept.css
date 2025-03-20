@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+#concept {
+  margin: 60px auto 0 auto;
+  padding: 0 264px 0 216px;
+}
+
+.concept-explain {
+  font-size: 14px;
+  height: 244px;
+  line-height: 35px;
+  width: 380px;
+}
+
+.concept-explain-title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.concept-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 95px;
+}
+
+.concept-flexitem {
+  display: flex;
+  flex-direction: column;
+  height: 553px;
+  width: 540px;
+}
+
+.concept-flexitemright {
+  padding: 96px 0 0 160px;
+}
+
+.concept-img-tennis {
+  align-self: flex-end;
+  height: 209px;
+  width: 668px;
+}
+
+.concept-img-title {
+  height: 158px;
+  margin-bottom: 50px;
+  width: 467px;
+}
+
+.concept-link-flex {
+  align-items: flex-end;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.concept-title {
+  color: #E42E1E;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}

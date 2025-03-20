@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#main-visual {
+article {
   position: relative;
 }
 
@@ -10,7 +10,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   filter: blur(5px);
-  transition: filter 3s ease;
+  transition: filter 1.5s ease;
   z-index: 10;
 }
 
@@ -36,6 +36,13 @@
 
 .main-visual-text {
   position: absolute;
-  top: -30px;
-  left: 65px;
+  top: -35px;
+  left: 60px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 20;
+}
+
+.fontsmaller {
+  font-size: smaller;
 }
