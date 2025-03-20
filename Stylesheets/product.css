@@ -148,6 +148,12 @@
   width: 528px;
 }
 
+.product-purchase-link:hover {
+  color: #e42e1e;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
 .product-section-nb {
   background-color: #e42e1e;
   border-radius: 4px;
