@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-#product {
-  padding: 50px 264px 50px 216px;
-}
 
 #product-detail {
   text-align: center;
@@ -51,7 +48,7 @@
 .product-detail-illust {
   left: 120px;
   position: absolute;
-  top: 200px;
+  bottom: 0px;
 }
 
 .product-detail-pageimg {
