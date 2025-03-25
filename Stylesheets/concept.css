@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 #concept {
-  width: 100%;
+  max-width: 1440px;
   margin: 60px auto 0 auto;
+  padding: 0 240px 0 120px;
 }
 
 .concept-explain {
@@ -10,35 +11,35 @@
   height: 244px;
   line-height: 35px;
   width: 380px;
+  font-weight: bold;
 }
 
 .concept-explain-title {
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .concept-flex {
   display: flex;
   justify-content: center;
-  padding-top: 95px;
 }
 
 .concept-flexitem {
   display: flex;
   flex-direction: column;
   height: 553px;
-  width: 540px;
+  width: 50%;
 }
 
 .concept-flexitemright {
-  padding: 96px 0 0 160px;
+  padding-left: 90px;
+  margin: 160px 0 0 0;
+  height: 390px;
 }
 
 .concept-img-tennis {
-  align-self: flex-end;
-  height: 209px;
-  width: 668px;
+  width: 100%;
 }
 
 .concept-img-title {

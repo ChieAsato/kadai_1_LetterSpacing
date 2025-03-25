@@ -1,24 +1,25 @@
 @charset "utf-8";
 
 #footer {
-  height: 250px;
-  position: relative;
+  display: flex;
+  padding: 100px 100px 0 200px;
 }
 
 #footer > img {
-  bottom: 0;
-  position: absolute;
-  right: 0;
 }
 
 .footer-flex {
-  align-items: center;
   display: flex;
-  gap: 255px;
-  height: 100%;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-flex p {
   color: black;
+}
+
+@media screen and (max-width: 767px) {
+  
 }
