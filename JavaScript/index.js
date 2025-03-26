@@ -21,3 +21,36 @@ function setUpFullscreen(imageToShowId, openButtonId, fullscreenImageId) {
 setUpFullscreen("imageToShow1", "openButton1", "fullscreenImage1");
 setUpFullscreen("imageToShow2", "openButton2", "fullscreenImage2");
 setUpFullscreen("imageToShow3", "openButton3", "fullscreenImage3");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menuButton");
+  const drawerMenu = document.getElementById("drawerMenu");
+
+  // オーバーレイを作成
+  const overlay = document.createElement("div");
+  overlay.classList.add("overlay");
+  document.body.appendChild(overlay);
+
+  // メニューを開閉する
+  menuButton.addEventListener("click", function () {
+    drawerMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+
+  // オーバーレイをクリックすると閉じる
+  overlay.addEventListener("click", function () {
+    drawerMenu.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+
+  // ナビゲーションのリンクをクリックしたらメニューを閉じる
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", function () {
+      drawerMenu.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+  });
+
+});
+

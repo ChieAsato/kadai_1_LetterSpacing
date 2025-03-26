@@ -20,6 +20,31 @@
   color: black;
 }
 
-@media screen and (max-width: 767px) {
-  
+@media screen and (max-width: 768px) {
+
+  #footer {
+    display: flex;
+    padding: 48px 0;
+    position: relative;
+  }
+
+  .footer-flex {
+    padding: 0 32px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-copyright {
+    display: inline;
+    vertical-align: top;
+  }
+
+  #footer > img {
+    width: 88px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+
 }

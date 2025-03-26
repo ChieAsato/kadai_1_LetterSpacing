@@ -14,18 +14,16 @@
 }
 
 .product-flexitem-right {
-  padding: 48px 80px 0 80px;
+  padding: 48px 0 0 80px;
   position: relative;
   width: 50%;
 }
-
-
 
 .product-explain {
   font-size: 14px;
   font-weight: bold;
   line-height: 28px;
-  width: 436px;
+  width: 100%;
   margin-bottom: 57px;
 }
 
@@ -105,6 +103,7 @@
 .product-title {
   font-size: 27px;
   margin-bottom: 29px;
+  width: 100%;
 }
 
 .scroll-wrapper {
@@ -180,6 +179,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .product-detail-title {
@@ -190,6 +190,10 @@
   position: relative;
 }
 
+.is-sp {
+  display: none;
+}
+
 .product-detail-title::before {
   color: #E42E1E;
   content: "・・・・";
@@ -198,4 +202,94 @@
   left: 45.5%;
   position: absolute;
   top: -60%;
+}
+
+@media screen and (max-width: 768px) {
+  #product {
+    padding: 64px 0 0 0;
+    margin-bottom: 0;
+  }
+
+  .product-flex {
+    max-width: 767px;
+    margin: 0 auto 50px auto;
+    flex-direction: column;
+    padding: 0 32px;
+  }
+
+  .product-img-parent {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .product-illustcontainer {
+  display: none;
+  }
+
+  .product-flexitem-right {
+    padding: 32px 0 0 0 ;
+    width: 100%;
+  }
+
+  .product-title {
+    font-size: 20px;
+    margin-bottom: 23 px;
+  }
+
+  .product-explain {
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product-detail-title {
+    color: #E42E1E;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    position: relative;
+  }
+
+  .product-detail-title::before {
+    content: "・・・・";
+    font-size: 18px;
+    font-weight: bold;
+    left: 56%;
+    top: -40%;
+  }
+
+  .is-sp {
+    display: block;
+  }
+
+  .product-detail-illust {
+    width: 35px;
+    left: 32px;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .product-purchase {
+    background-color: #E42E1E;
+    height: auto;
+    margin-top: 0;
+    padding: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-purchase-link {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+  }
+
 }

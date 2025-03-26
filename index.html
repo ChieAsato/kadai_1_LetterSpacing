@@ -94,7 +94,7 @@
     <div class="header-info">
       <div class="header-bnn">
         <svg width="30" height="20">
-          <use  href="#bnn" />
+          <use href="#bnn" />
         </svg>
         <p class="header-p">ISBN:978-4-8025-1209-1</p>
         <p class="header-p">¥2,200+tax</p>
@@ -125,12 +125,18 @@
           </svg>
         </a>
       </div>
-      <ul>
+      <ul class="drawer-menu" id="drawerMenu">
         <li><a class="nav-link" href="#concept">コンセプト</a></li>
         <li><a class="nav-link" href="#product">本書の特徴</a></li>
         <li><a class="nav-link" href="#contents">目次</a></li>
         <li><a class="nav-link" href="#profile">著者について</a></li>
       </ul>
+    </nav>
+    <nav id="nav-sp">
+      <button class="hamburger-menu" id="menuButton">
+        <span class="nav-btn-line"></span>
+        <span class="nav-btn-line"></span>
+      </button>
     </nav>
   </header>
   <main>
@@ -219,7 +225,7 @@
         </div>
       </section>
       <section id="product-detail">
-        <h3 class="product-detail-title">知りたいところだけサクッと読める見開き完結</h3>
+        <h3 class="product-detail-title">知りたいところだけサクッと<br class="is-sp">読める見開き完結</h3>
         <div class="product-detail-row">
           <div class="scroll-wrapper">
             <img class="product-detail-pageimg" src="images/product/img_feature_page_01.png" alt="">
@@ -252,7 +258,8 @@
               <!-- アイコンの挿入 -->
               <use x="50" y="30" href="#amazon" width="30" height="20" fill="white" />
               <!-- テキストの表示 -->
-              <text x="100" y="45" font-size="14" font-weight="bold" fill="currentColor" alignment-baseline="middle">Amazonで購入</text>
+              <text x="100" y="45" font-size="14" font-weight="bold" fill="currentColor"
+                alignment-baseline="middle">Amazonで購入</text>
             </svg>
           </a>
           <a class="product-purchase-link" href="#">
@@ -260,7 +267,8 @@
               <!-- アイコンの挿入 -->
               <use x="10" y="30" href="#bnn" width="30" height="20" />
               <!-- テキストの表示 -->
-              <text x="70" y="45" font-size="14" font-weight="bold" fill="currentColor" alignment-baseline="middle">BNNオンラインストアで購入</text>
+              <text x="70" y="45" font-size="14" font-weight="bold" fill="currentColor"
+                alignment-baseline="middle">BNNオンラインストアで購入</text>
             </svg>
           </a>
         </div>
@@ -426,7 +434,7 @@
               <p>定価:本体2,200円+税</p>
             </div>
           </div>
-          <div>
+          <div class="book-cover-linkcontainer">
             <a class="book-cover-link" href="#">
               <svg width="300" height="50" xmlns="http://www.w3.org/2000/svg">
                 <!-- アイコンの挿入 -->
@@ -454,7 +462,7 @@
         <svg width="40" height="40">
           <use href="#bnn" />
         </svg>
-        <p>&copy; 2021 Tatsuya Imaichi</p>
+        <p class="footer-copyright">&copy; 2021 Tatsuya Imaichi</p>
       </div>
       <div class="header-sns">
         <p class="header-p">SNSでシェアする</p>

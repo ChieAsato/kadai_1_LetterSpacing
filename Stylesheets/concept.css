@@ -8,9 +8,9 @@
 
 .concept-explain {
   font-size: 14px;
-  height: 244px;
+  height: auto;
   line-height: 35px;
-  width: 380px;
+  width: 100%;
   font-weight: bold;
 }
 
@@ -28,14 +28,14 @@
 .concept-flexitem {
   display: flex;
   flex-direction: column;
-  height: 553px;
+  height: auto;
   width: 50%;
 }
 
 .concept-flexitemright {
   padding-left: 90px;
-  margin: 160px 0 0 0;
-  height: 390px;
+  margin: 100px 0 0 0;
+  height: auto;
 }
 
 .concept-img-tennis {
@@ -43,9 +43,9 @@
 }
 
 .concept-img-title {
-  height: 158px;
+  height: auto;
   margin-bottom: 50px;
-  width: 467px;
+  width: 80%;
 }
 
 .concept-link-flex {
@@ -60,4 +60,50 @@
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #concept {
+    max-width: 767px;
+    margin: 60px auto 0 auto;
+    padding: 0 30px;
+  }
+
+  .concept-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .concept-flexitem {
+    width: 100%;
+    height: auto;
+  }
+
+  .concept-img-title {
+    margin-bottom: 10px;
+    width: 65%;
+    margin-right: 100px;
+    align-self: center;
+  }
+
+  .concept-flexitemright {
+    padding-left: 0;
+    margin: 50px 0 0 0;
+    height: auto;
+  }
+
+  .concept-explain-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .concept-explain {
+    height: auto;
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
 }
