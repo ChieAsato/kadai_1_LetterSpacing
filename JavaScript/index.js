@@ -26,29 +26,28 @@ setUpFullscreen("imageToShow3", "openButton3", "fullscreenImage3");
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("menuButton");
   const drawerMenu = document.getElementById("drawerMenu");
+  const lineDisappear = document.getElementById("lineDisappear");
+  const lineAppear = document.getElementById("lineAppear");
 
-  // オーバーレイを作成
-  const overlay = document.createElement("div");
-  overlay.classList.add("overlay");
-  document.body.appendChild(overlay);
 
   // メニューを開閉する
   menuButton.addEventListener("click", function () {
     drawerMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
 
-  // オーバーレイをクリックすると閉じる
-  overlay.addEventListener("click", function () {
-    drawerMenu.classList.remove("active");
-    overlay.classList.remove("active");
+    if (drawerMenu.classList.contains("active")) {
+      lineDisappear.style.display = "none";
+      lineAppear.style.backgroundColor = "#ffffff"; // メニューを開いたら非表示
+    } else {
+      lineDisappear.style.display = "block";
+      lineAppear.style.backgroundColor = "#000000"; // メニューを閉じたら表示
+    }
+
   });
 
   // ナビゲーションのリンクをクリックしたらメニューを閉じる
   document.querySelectorAll(".nav-link").forEach(link => {
     link.addEventListener("click", function () {
       drawerMenu.classList.remove("active");
-      overlay.classList.remove("active");
     });
   });
 

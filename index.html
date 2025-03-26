@@ -112,7 +112,7 @@
       <h1 class="header-title">レタースペーシング</h1>
       <p class="header-title-p">タイポグラフィにおける文字間調整の考え方</p>
     </div>
-    <nav id="nav">
+    <nav id="nav-pc">
       <div>
         <a class="nav-btnlink" href="">Amazonで購入
           <svg width="20" height="10">
@@ -125,7 +125,7 @@
           </svg>
         </a>
       </div>
-      <ul class="drawer-menu" id="drawerMenu">
+      <ul>
         <li><a class="nav-link" href="#concept">コンセプト</a></li>
         <li><a class="nav-link" href="#product">本書の特徴</a></li>
         <li><a class="nav-link" href="#contents">目次</a></li>
@@ -133,9 +133,15 @@
       </ul>
     </nav>
     <nav id="nav-sp">
+      <ul class="drawer-menu" id="drawerMenu">
+        <li><a class="nav-link" href="#concept">コンセプト</a></li>
+        <li><a class="nav-link" href="#product">本書の特徴</a></li>
+        <li><a class="nav-link" href="#contents">目次</a></li>
+        <li><a class="nav-link" href="#profile">著者について</a></li>
+      </ul>
       <button class="hamburger-menu" id="menuButton">
-        <span class="nav-btn-line"></span>
-        <span class="nav-btn-line"></span>
+        <span id="lineDisappear" class="nav-btn-line"></span>
+        <span id="lineAppear" class="nav-btn-line"></span>
       </button>
     </nav>
   </header>
@@ -424,7 +430,7 @@
         <div class="book-cover-flex">
           <img src="images/shop/img_cover.png" alt="レタースペーシング表紙">
           <div class="book-cover-flexitem">
-            <h2>レタースペーシング表紙</h2>
+            <h2>レタースペーシング</h2>
             <p>タイポグラフィにおける文字間調整の考え方</p>
             <div>
               <p>今市達也 著</p>
