@@ -1,25 +1,44 @@
 @charset "utf-8";
 
 #book-cover {
-  background-color: #e42e1e;
-  height: 406px;
   margin-top: 150px;
+  position: relative;
+}
+
+#book-cover::before {
+  content: "";
+  width: 100%;
+  height: calc(100% - 48px);
+  background: #e42e1e;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index: 1;
 }
 
 .book-cover-flex {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
   align-items: center;
   display: flex;
-  gap: 65px;
   justify-content: center;
+  gap: 20px;
 }
 
 .book-cover-flexitem {
   color: #ffffff;
+  height: auto;
+  width: 320px;
+  min-width: 220px;
+  z-index: 2;
 }
 
 .book-cover-flex > img {
-  height: 454px;
+  height: auto;
   width: 320px;
+  min-width: 220px;
+  z-index: 2;
 }
 
 .book-cover-link {
@@ -33,6 +52,10 @@
   margin-bottom: 16px;
   text-align: center;
   width: 270px;
+}
+
+.book-cover-linkcontainer {
+  z-index: 2;
 }
 
 .book-cover-link:hover {

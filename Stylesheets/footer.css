@@ -2,10 +2,9 @@
 
 #footer {
   display: flex;
-  padding: 100px 100px 0 200px;
-}
-
-#footer > img {
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
 }
 
 .footer-flex {
@@ -13,11 +12,19 @@
   justify-content: space-around;
   width: 100%;
   max-width: 1440px;
+  padding: 0 240px 0 120px;
   margin: 0 auto;
 }
 
 .footer-flex p {
   color: black;
+}
+
+#footer > img {
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -41,10 +48,6 @@
 
   #footer > img {
     width: 88px;
-    object-fit: contain;
-    position: absolute;
-    bottom: 0;
-    right: 20px;
   }
 
 }
