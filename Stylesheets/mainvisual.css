@@ -61,8 +61,8 @@ article {
     font-size: 12.5px;
     position: absolute;
     font-weight: 800;
-    top: -30px;
-    left: 43px;
+    top: -32px;
+    left: 34px;
     color: #ffffff;
     text-align: center;
     z-index: 20;
@@ -84,7 +84,7 @@ article {
     width: 96px;
     position: absolute;
     top: -50px;
-    left: 36px;
+    left: 25px;
     animation: rotate 15s linear infinite;
   }
 }

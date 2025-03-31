@@ -94,15 +94,29 @@
   }
 
   .header-info {
+    padding: 30px 20px 0 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     left: 0;
 
   }
 
   .header-bnn {
     margin-bottom: 0;
-    gap: 10px;
+    gap: 0;
+  }
+
+  .header-bnnLogo {
+    transform: translate(15px, 5px);
+  }
+
+  .header-p {
+    font-size: 10px;
+    margin-bottom: 0;
+    transform: scale(.8);
+    transform-origin: center right;
+    line-height: 3;
   }
 
 
@@ -124,15 +138,14 @@
   }
 
   .header-title {
-    font-size: 10vw;
-    /* ビューポート幅の8% */
+    font-size: 8vw;
     text-align: center;
   }
 
   .header-title-p {
     font-size: 3.5vw;
-    /* ビューポート幅の2.5% */
     text-align: center;
+    letter-spacing: 0;
   }
 
 
@@ -142,7 +155,7 @@
     height: 50px;
   }
 
-  #nav-pc>div {
+  .nav-btnList {
     display: flex;
     flex-direction: row;
     gap: 10px;

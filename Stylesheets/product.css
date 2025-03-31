@@ -244,7 +244,8 @@
 
   .product-title {
     font-size: 20px;
-    margin-bottom: 23 px;
+    margin-bottom: 23px;
+    width: 100%;
   }
 
   .product-explain {

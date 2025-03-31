@@ -65,9 +65,8 @@
 @media screen and (max-width: 768px) {
 
   #concept {
-    max-width: 767px;
-    margin: 60px auto 0 auto;
-    padding: 0 30px;
+    margin: 0 auto;
+    padding: 64px 32px 0 32px;
   }
 
   .concept-flex {
@@ -84,8 +83,7 @@
   .concept-img-title {
     margin-bottom: 10px;
     width: 65%;
-    margin-right: 100px;
-    align-self: center;
+    align-self: left;
   }
 
   .concept-flexitemright {
@@ -95,6 +93,7 @@
   }
 
   .concept-explain-title {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
   }
