@@ -1,4 +1,68 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+  const mainHeroImg = document.querySelector(".main-hero-img");
+  const body = document.body;
+
+  if (mainHeroImg) {
+    // ローディング用の白背景を作成
+    const loadingScreen = document.createElement("div");
+    loadingScreen.style.position = "fixed";
+    loadingScreen.style.top = "0";
+    loadingScreen.style.left = "0";
+    loadingScreen.style.width = "100%";
+    loadingScreen.style.height = "100%";
+    loadingScreen.style.background = "white";
+    loadingScreen.style.display = "flex";
+    loadingScreen.style.justifyContent = "center";
+    loadingScreen.style.alignItems = "center";
+    loadingScreen.style.zIndex = "9999";
+    loadingScreen.style.transition = "opacity 1s ease-out";
+
+    const loadingText = document.createElement("div");
+    loadingText.innerText = "Loading";
+    loadingText.style.fontSize = "1rem";
+    loadingText.style.color = "red";
+    loadingText.style.animation = "blink 1s infinite alternate";
+
+    loadingScreen.appendChild(loadingText);
+    document.body.appendChild(loadingScreen);
+
+    // ローディングアニメーション用のCSSを追加
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes blink {
+        0% { opacity: 1; }
+        100% { opacity: 0.5; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    mainHeroImg.style.opacity = "0";
+    mainHeroImg.style.filter = "blur(10px) contrast(50%)";
+    mainHeroImg.style.transform = "scale(1.1)";
+
+    setTimeout(() => {
+      mainHeroImg.style.transition = "opacity 1s ease-out, filter 2.5s cubic-bezier(.215,.61,.355,1), transform 3.75s cubic-bezier(.215,.61,.355,1)";
+      mainHeroImg.style.opacity = "1";
+      mainHeroImg.style.filter = "blur(3px) contrast(80%)";
+      mainHeroImg.style.transform = "scale(1.05)";
+    }, 100);
+
+    setTimeout(() => {
+      mainHeroImg.style.filter = "blur(0) contrast(100%)";
+      mainHeroImg.style.transform = "scale(1)";
+    }, 2000);
+
+    setTimeout(() => {
+      loadingScreen.style.opacity = "0";
+      setTimeout(() => loadingScreen.remove(), 1000);
+    }, 1500);
+  }
+});
+
+
+
+
 // 画像を全画面表示
 function setUpFullscreen(imageToShowId, openButtonId, fullscreenImageId) {
   const imageToShow = document.getElementById(imageToShowId);
