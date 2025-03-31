@@ -60,22 +60,27 @@
   text-align: right;
 }
 
-.nav-btnlink {
+.nav-btnLink {
   background-color: #E4211E;
   border-radius: 4px;
   color: #ffffff;
   display: block;
-  font-size: 10px;
-  height: 30px;
+  font-size: 14px;
   line-height: 30px;
   margin-bottom: 10px;
-  text-align: center;
-  width: 120px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
-.nav-btnlink:hover {
+.nav-btnLink:hover {
   background-color: #000000;
   transition: all 0.3s ease;
+}
+
+.nav-btnLink-bnn {
+  transform: translateX(16px);
 }
 
 .nav-link {

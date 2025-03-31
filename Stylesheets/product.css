@@ -58,12 +58,6 @@
   margin-bottom: 57px;
 }
 
-
-
-
-
-
-
 .product-illustcontainer {
   width: 100%;
   text-align: right;
@@ -91,6 +85,7 @@
   line-height: 120px;
   width: 60%;
   height: 120px;
+  padding: 0 30px;
 }
 
 .product-purchase-link:hover {

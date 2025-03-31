@@ -18,6 +18,7 @@
 
 .book-cover-flex {
   max-width: 1440px;
+  padding: 0 8% 0 16%  ;
   margin: 0 auto;
   box-sizing: border-box;
   align-items: center;
@@ -27,18 +28,25 @@
 }
 
 .book-cover-flexitem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   color: #ffffff;
   height: auto;
-  width: 320px;
-  min-width: 220px;
+  width: 20.3%;
+  min-width: 150px;
   z-index: 2;
 }
 
 .book-cover-flex > img {
   height: auto;
-  width: 320px;
+  width: 33.3%;
   min-width: 220px;
   z-index: 2;
+}
+
+.book-cover-linkcontainer {
+  width: 46.3%;
 }
 
 .book-cover-link {
@@ -48,10 +56,11 @@
   color: #ffffff;
   display: flex;
   height: 72px;
-  justify-content: center;
+  justify-content: flex-endq;
   margin-bottom: 16px;
   text-align: center;
-  width: 270px;
+  width: 100%;
+  font-weight: bold;
 }
 
 .book-cover-linkcontainer {
