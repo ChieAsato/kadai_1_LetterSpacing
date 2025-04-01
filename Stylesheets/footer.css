@@ -16,8 +16,24 @@
   margin: 0 auto;
 }
 
-.footer-flex p {
-  color: black;
+.footer-copyright {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-sns {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-sns-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-url {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #footer > img {
@@ -41,9 +57,24 @@
     gap: 10px;
   }
 
+  .footer-logo-bnn {
+    transform: translateY(-7px);
+  }
+
   .footer-copyright {
     display: inline;
     vertical-align: top;
+  }
+
+  .footer-sns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .footer-sns-item {
+    display: inline-block;
+    margin-right: 5px;
   }
 
   #footer > img {

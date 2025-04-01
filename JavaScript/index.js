@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(style);
 
     mainHeroImg.style.opacity = "0";
-    mainHeroImg.style.filter = "blur(10px) contrast(50%)";
+    mainHeroImg.style.filter = "blur(3000px) contrast(50%)";
     mainHeroImg.style.transform = "scale(1.1)";
 
     setTimeout(() => {

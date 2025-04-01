@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-#book-cover {
+#cover {
   margin-top: 150px;
   position: relative;
 }
 
-#book-cover::before {
+#cover::before {
   content: "";
   width: 100%;
   height: calc(100% - 48px);
@@ -16,9 +16,9 @@
   z-index: 1;
 }
 
-.book-cover-flex {
+.cover-flex {
   max-width: 1440px;
-  padding: 0 8% 0 16%  ;
+  padding: 0 12% 0 4%;
   margin: 0 auto;
   box-sizing: border-box;
   align-items: center;
@@ -27,29 +27,42 @@
   gap: 20px;
 }
 
-.book-cover-flexitem {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: #ffffff;
+.cover-flex > img {
   height: auto;
-  width: 20.3%;
+  width: 25.3%;
   min-width: 150px;
   z-index: 2;
 }
 
-.book-cover-flex > img {
+.cover-description {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
   height: auto;
-  width: 33.3%;
-  min-width: 220px;
+  max-width: 41.3%;
+  min-width: 20.3%;
   z-index: 2;
 }
 
-.book-cover-linkcontainer {
-  width: 46.3%;
+.cover-description__title {
+  font-size: 2vw;
 }
 
-.book-cover-link {
+.cover-description__subTitle {
+  font-size: 0.9vw;
+}
+
+.cover-description__content {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.cover-link {
+  max-width: 46.3%;
+  z-index: 2;
+}
+
+.cover-linkItem {
   align-items: center;
   background-color: #000000;
   border-radius: 8px;
@@ -63,50 +76,58 @@
   font-weight: bold;
 }
 
-.book-cover-linkcontainer {
-  z-index: 2;
-}
-
-.book-cover-link:hover {
+.cover-linkItem:hover {
   color: #e42e1e;
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
 
-.book-cover-linkicon {
-  color: #ffffff;
-  height: 10px;
-  width: 50px;
-}
-
 @media screen and (max-width: 768px) {
-  #book-cover {
+  #cover {
     background-color: #e42e1e;
     height: 100%;
     margin-top: 200px;
     padding: 0 32px;
   }
 
-  .book-cover-flex {
+  .cover-flex {
     flex-direction: column;
     gap: 30px;
   }
 
-  .book-cover-flex > img {
+  .cover-flex > img {
     height: auto;
     width: 75%;
     margin: -96px auto 40px;
   }
 
-  .book-cover-flexitem {
-    margin-right: auto;
+  .cover-description {
+    min-width: 100%;
   }
 
-  .book-cover-linkcontainer {
+  .cover-description__title {
+    font-size: 30px;
     width: 100%;
   }
 
-  .book-cover-link {
+  .cover-description__subTitle {
+    font-size: 15px;
     width: 100%;
   }
+
+  .cover-link {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cover-linkItem {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .cover-linkImg {
+    transform: translateY(20%);
+  }
+
 }
